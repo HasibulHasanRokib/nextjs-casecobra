@@ -27,7 +27,7 @@ export default function Home() {
                 <span className="bg-green-600 px-2 text-white">Custom</span>{" "}
                 Phone Case
               </h1>
-              <p className="mt-8 max-w-prose text-balance text-center text-lg text-muted-foreground md:text-wrap lg:pr-10 lg:text-left">
+              <p className="mt-8 max-w-prose text-balance text-center text-lg md:text-wrap lg:pr-10 lg:text-left">
                 Capture your favorite memories with your own,
                 <span className="px-2 font-semibold text-gray-800">
                   one-of-one
@@ -102,7 +102,7 @@ export default function Home() {
                     <Star className="h-4 w-4 fill-green-600 text-green-600" />
                     <Star className="h-4 w-4 fill-green-600 text-green-600" />
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="">
                     <span className="font-semibold">1,250</span> happy customers
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function Home() {
                 />
                 <div className="flex flex-col">
                   <p className="font-semibold">Jhanathan</p>
-                  <div className="flex items-center gap-1.5 text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 stroke-[3px] text-green-500" />
                     <p className="text-sm">Verified Purchase</p>
                   </div>
@@ -210,7 +210,7 @@ export default function Home() {
                 />
                 <div className="flex flex-col">
                   <p className="font-semibold">Josh</p>
-                  <div className="flex items-center gap-1.5 text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 stroke-[3px] text-green-500" />
                     <p className="text-sm">Verified Purchase</p>
                   </div>
