@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
@@ -6,8 +7,10 @@ import Image2 from "@/public/your-image.png";
 import Snake2 from "@/public/snake-2.png";
 import User1 from "@/public/users/user-1.png";
 import User2 from "@/public/users/user-4.jpg";
-import { Check, Star } from "lucide-react";
+import { ArrowRight, Check, Star } from "lucide-react";
 import Phone from "@/components/Phone";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -120,7 +123,7 @@ export default function Home() {
                 height={80}
                 className="absolute -bottom-6 -left-6 select-none"
               />
-              <Phone className="w-64" imgSrc="/testimonials/3.jpg" />
+              <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
         </MaxWidthWrapper>
@@ -214,6 +217,71 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      <section>
+        <MaxWidthWrapper className="py-12">
+          <div className="mb-12 px-5 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="order-1 text-center text-5xl font-bold !leading-tight tracking-tight md:text-5xl lg:text-6xl">
+                Upload your photo and get{" "}
+                <span className="bg-green-600 px-2 text-white">
+                  your own case
+                </span>{" "}
+                now
+              </h2>
+            </div>
+          </div>
+
+          <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+            <div className="relative flex grid-cols-2 flex-col items-center gap-40 md:grid">
+              <img
+                src="/arrow.png"
+                alt="arrow"
+                className="absolute left-1/2 top-[25rem] z-10 -translate-x-1/2 -translate-y-1/2 rotate-90 md:top-1/2 md:rotate-0"
+              />
+              <div className="relative h-80 w-full max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 md:h-full md:justify-self-end lg:rounded-2xl">
+                <img
+                  src="/horse.jpg"
+                  alt="horse"
+                  className="h-full w-full rounded-md bg-white object-cover shadow-2xl ring-1 ring-gray-900/10"
+                />
+              </div>
+              <Phone imgSrc="/horse_phone.jpg" className="w-60" />
+            </div>
+          </div>
+
+          <ul className="mx-auto mt-12 w-fit max-w-prose space-y-2 sm:text-lg">
+            <li className="w-fit">
+              <Check className="mr-1.5 inline h-5 w-5 text-green-600" />
+              High-quality silicone material
+            </li>
+            <li className="w-fit">
+              <Check className="mr-1.5 inline h-5 w-5 text-green-600" />
+              Scratch and fingerprint resistant coating
+            </li>
+            <li className="w-fit">
+              <Check className="mr-1.5 inline h-5 w-5 text-green-600" />
+              Wireless charging compatible
+            </li>
+            <li className="w-fit">
+              <Check className="mr-1.5 inline h-5 w-5 text-green-600" />5 years
+              print warranty
+            </li>
+          </ul>
+          <div className="flex justify-center">
+            <Link
+              className={buttonVariants({
+                size: "lg",
+                className: "mx-auto mt-8",
+              })}
+              href={"/configure/upload"}
+            >
+              Create your case now
+              <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
           </div>
         </MaxWidthWrapper>
       </section>
